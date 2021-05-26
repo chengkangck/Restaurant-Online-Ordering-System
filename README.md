@@ -5,27 +5,4 @@ The directory framework structure we designed for the project is as follows:
 
 The high-availability MVC framework configuration is as follows:
 
-┣━application.py encapsulated Flask's global variables, including app, database,
-etc.┣━commom stores public
-parts┃...┣━libs public methods or classes, such as link manager, version manager, etc.┃
-... ┣━models all database models
-┣━config configuration file┃
-....┣━base_setting.py basic configuration┃
-....┣━develop_setting.py development environment configuration┃
-....┣━local_setting_demo.py local development environment Configuration demo
-┃....┣━production_setting.py production environment configuration┣━docs
-file storage
-┃....┣━MyQSL.MD All database changes must be recorded
-here ┣━jobs scheduled tasks
-┃....┣━bin
-┃...┣━tasks All timed tasks are stored
-here┣━manage.py start  
-entry┣━release.sh system's own simple operation script, including update code, restart application
-┣━requirements.txt stores python expansion files Package directory┣━uwsgi.ini
-uwsgi configuration of the production environment┣━web
-Http storage┃
-....┣━controllers All C layers are placed here
-┃....┣━interceptors interceptor related to prevent unlogged into the page
-┃...┣━static static files┃
-....┣━templates template
-files┣━www.py Http module related initialization, routing blueprint planning, unified interception processing and unified error handling
+![image](https://github.com/chengkangck/Restaurant-Online-Ordering-System/blob/main/images/framework.PNG)
